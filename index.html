@@ -90,6 +90,39 @@
             transform: translateY(-2px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
+
+        .app-soon {
+            margin-top: 1.25rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            font-weight: 600;
+            letter-spacing: 0.2px;
+        }
+
+        .store-badges {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .store-badges img {
+            height: 44px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 8px;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+        }
+
+        .store-badges img:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+        }
         
         .container {
             max-width: 1200px;
@@ -266,6 +299,11 @@
         <h1>Connect with Doctors Anytime, Anywhere</h1>
         <p>Professional healthcare consultation at your fingertips</p>
         <button class="cta-button">Get Started</button>
+        <div class="app-soon">📱 App coming soon on Android & iOS</div>
+        <div class="store-badges" aria-label="App store badges">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </div>
     </section>
 
     <section class="container">
