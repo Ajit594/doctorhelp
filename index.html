@@ -39,6 +39,12 @@
             display: flex;
             align-items: center;
         }
+
+        .logo img {
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
         
         .nav-links {
             display: flex;
@@ -210,6 +216,19 @@
             color: #856404;
             margin-bottom: 1rem;
         }
+
+        .payment-services-list {
+            margin-top: 1rem;
+            margin-left: 2rem;
+        }
+
+        .payment-methods {
+            margin-top: 1rem;
+        }
+
+        .refund-policy-note {
+            margin-top: 0.5rem;
+        }
         
         .footer {
             background: #2d3748;
@@ -267,6 +286,19 @@
             font-weight: bold;
             margin-bottom: 0.5rem;
         }
+
+        .price-range {
+            font-size: 2rem;
+            color: #667eea;
+            margin: 1rem 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #4a5568;
+        }
         
         @media (max-width: 768px) {
             .hero h1 {
@@ -283,7 +315,7 @@
     <header class="header">
         <nav class="nav">
             <div class="logo">
-                <img src="logo.png"style="height: 50px; vertical-align: middle; margin-right: 10px;">
+                <img src="logo.png" alt="DoctorHelp logo" title="DoctorHelp" />
                 <span>DoctorHelp</span>
             </div>
             <ul class="nav-links">
@@ -301,8 +333,8 @@
         <button class="cta-button">Get Started</button>
         <div class="app-soon">📱 App coming soon on Android & iOS</div>
         <div class="store-badges" aria-label="App store badges">
-            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" title="Download on the App Store">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" title="Get it on Google Play">
         </div>
     </section>
 
@@ -350,15 +382,15 @@
         <div class="payment-info">
             <h3>💰 Payment Services</h3>
             <p><strong>Our platform facilitates payments for the following services:</strong></p>
-            <ul style="margin-top: 1rem; margin-left: 2rem;">
+            <ul class="payment-services-list">
                 <li>Doctor consultation fees</li>
                 <li>Appointment booking charges</li>
                 <li>Medical records access</li>
                 <li>Telemedicine services</li>
                 <li>Prescription fulfillment (future)</li>
             </ul>
-            <p style="margin-top: 1rem;"><strong>Payment Methods:</strong> Credit/Debit Cards, UPI, Net Banking, Digital Wallets</p>
-            <p style="margin-top: 0.5rem;"><strong>Refund Policy:</strong> Full refund within 24 hours of cancellation, subject to terms and conditions</p>
+            <p class="payment-methods"><strong>Payment Methods:</strong> Credit/Debit Cards, UPI, Net Banking, Digital Wallets</p>
+            <p class="refund-policy-note"><strong>Refund Policy:</strong> Full refund within 24 hours of cancellation, subject to terms and conditions</p>
         </div>
 
         <div class="stats">
@@ -412,17 +444,17 @@
         <div class="features">
             <div class="feature-card">
                 <h3>General Consultation</h3>
-                <div style="font-size: 2rem; color: #667eea; margin: 1rem 0;">₹299 - ₹799</div>
+                <div class="price-range">₹299 - ₹799</div>
                 <p>Basic health consultation with general physicians</p>
             </div>
             <div class="feature-card">
                 <h3>Specialist Consultation</h3>
-                <div style="font-size: 2rem; color: #667eea; margin: 1rem 0;">₹500 - ₹1500</div>
+                <div class="price-range">₹500 - ₹1500</div>
                 <p>Consultation with specialist doctors</p>
             </div>
             <div class="feature-card">
                 <h3>Emergency Support</h3>
-                <div style="font-size: 2rem; color: #667eea; margin: 1rem 0;">₹999+</div>
+                <div class="price-range">₹999+</div>
                 <p>Priority consultation for urgent cases</p>
             </div>
         </div>
@@ -449,6 +481,7 @@
                     <li><a href="privacy.html">Privacy Policy</a></li>
                     <li><a href="terms.html">Terms of Service</a></li>
                     <li><a href="refund.html">Refund Policy</a></li>
+                    <li><a href="policies/Policies.pdf" target="_blank" rel="noopener">Policies PDF</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
@@ -462,7 +495,7 @@
                 </ul>
             </div>
         </div>
-        <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #4a5568;">
+        <div class="footer-bottom">
             <p>&copy; 2026 DoctorHelp. All rights reserved.</p>
         </div>
     </footer>
